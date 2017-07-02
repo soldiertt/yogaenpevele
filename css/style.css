@@ -14,22 +14,56 @@ h2 {
   min-height: 200px;
 }
 
+body > main, body > footer {
+  padding-left: 300px;
+}
+
+.card.horizontal .card-image {
+  max-width: 30%;
+}
+
 #price, #about {
   height: 600px;
 }
 
-body > main, body > footer {
-  padding-left: 300px;
+@media only screen and (max-width : 1500px) {
+
+  #price {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width : 1300px) {
+
+  #price {
+    height: 800px;
+  }
+  #about {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  #price {
+    height: 1100px;
+  }
+  #about {
+    height: 750px;
+  }
 }
 
 @media only screen and (max-width : 992px) {
   body > main, body > footer {
     padding-left: 0;
   }
+
+  #price {
+    height: 1050px;
+  }
 }
 
 .table-of-contents a.active {
-  background-color: #00796b;
+  background-color: #004d40;
 }
 
 /* FORM COLOR */
