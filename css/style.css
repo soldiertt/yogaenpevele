@@ -1,3 +1,7 @@
+/***********************
+ ******* GENERAL *******
+ ***********************/
+
 h2 {
   text-decoration: underline;
 }
@@ -14,17 +18,69 @@ h2 {
   min-height: 200px;
 }
 
+
+ul.yep-list {
+  margin-left: 20px;
+  list-style-type: circle;
+}
+
+ul.yep-list.yep-list-top > li {
+  font-size: 17px;
+}
+
+ul.yep-list > li {
+  font-size: 15px;
+}
+
+ul.yep-list li {
+  list-style-type: circle;
+}
+
+/***********************
+ ******** NAV **********
+ ***********************/
+
+nav .brand-logo {
+  font-size: 1.5rem;
+}
+
+
+/***********************
+ ******* FOOTER ********
+ ***********************/
+
 body > main, body > footer {
   padding-left: 300px;
 }
+
+/***********************
+ ********* CARD ********
+ ***********************/
 
 .card.horizontal .card-image {
   max-width: 30%;
 }
 
+/***********************
+ ******* SECTIONS ******
+ ***********************/
+
+#intro {
+  height: 100vh;
+}
+
 #price, #about {
   height: 600px;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+/***********************
+ ***** RESPONSIVE ******
+ ***********************/
 
 @media only screen and (max-width : 1500px) {
 
@@ -59,6 +115,33 @@ body > main, body > footer {
 
   #price {
     height: 1050px;
+  }
+  #about {
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width : 430px) {
+  body > main, body > footer {
+    padding-left: 0;
+  }
+
+  #price {
+    height: 1250px;
+  }
+  #about {
+    height: 1000px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .navbar-fixed {
+    height: 50px;
+  }
+
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 50px;
+    line-height: 50px;
   }
 }
 
