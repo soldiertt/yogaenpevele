@@ -97,9 +97,18 @@ body > main, body > footer {
   height: 700px;
 }
 
+#price p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 #map {
   height: 400px;
   width: 100%;
+}
+
+#hathayoga p {
+  text-align: justify;
 }
 
 /***********************

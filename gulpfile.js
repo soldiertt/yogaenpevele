@@ -18,7 +18,11 @@ gulp.task('html', function() {
     .pipe(gulp.dest('dist'));
 });
 
-
+// PHP
+gulp.task('php', function() {
+  return gulp.src('*.php')
+    .pipe(gulp.dest('dist'));
+});
 
 // FONTS
 gulp.task('fonts', function() {
@@ -76,5 +80,5 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-  gulp.run('vendorstyles', 'appstyles', 'vendorscripts', 'appscripts', 'images', 'html', 'fonts');
+  gulp.run('vendorstyles', 'appstyles', 'vendorscripts', 'appscripts', 'images', 'html', 'fonts', 'php');
 });
