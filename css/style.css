@@ -10,6 +10,15 @@ h2 {
   font-size: 1.1em;
 }
 
+.yep-med2-text {
+  font-size: 1.3em;
+}
+
+ul.yep-list.yep-medium-text > li {
+  font-size: 1.1em;
+  line-height: 35px;
+}
+
 .yep-large-text {
   font-size: 1.5em;
 }
@@ -34,6 +43,14 @@ ul.yep-list > li {
 
 ul.yep-list li {
   list-style-type: circle;
+}
+
+.yep-bg-beige {
+  background: linear-gradient(to left, white, #F9FBEE);
+}
+
+.yep-bg-beige2 {
+  background-color: #F9FBEE;
 }
 
 /***********************
@@ -61,6 +78,10 @@ body > main, body > footer {
   max-width: 30%;
 }
 
+.card.horizontal .card-image img {
+  margin-left: 10px;
+}
+
 /***********************
  ******* SECTIONS ******
  ***********************/
@@ -68,9 +89,12 @@ body > main, body > footer {
 #intro {
   height: 100vh;
 }
+#where {
+  height: 700px;
+}
 
-#price, #about {
-  height: 600px;
+#price {
+  height: 700px;
 }
 
 #map {
@@ -82,31 +106,31 @@ body > main, body > footer {
  ***** RESPONSIVE ******
  ***********************/
 
-@media only screen and (max-width : 1500px) {
-
-  #price {
-    height: 700px;
-  }
-}
-
-@media only screen and (max-width : 1300px) {
-
+@media only screen and (max-width : 1750px) {
   #price {
     height: 800px;
   }
-  #about {
-    height: 700px;
+}
+
+@media only screen and (max-width : 1600px) {
+  #price {
+    height: 900px;
   }
+}
+
+@media only screen and (max-width : 1400px) {
+  #price {
+    height: 1000px;
+  }
+
 }
 
 @media only screen and (max-width : 1200px) {
   #price {
-    height: 1100px;
-  }
-  #about {
-    height: 750px;
+    height: 1320px;
   }
 }
+
 
 @media only screen and (max-width : 992px) {
   body > main, body > footer {
@@ -114,23 +138,14 @@ body > main, body > footer {
   }
 
   #price {
-    height: 1050px;
+    height: 1100px;
   }
-  #about {
-    height: 800px;
-  }
+
 }
 
-@media only screen and (max-width : 430px) {
-  body > main, body > footer {
-    padding-left: 0;
-  }
-
+@media only screen and (max-width : 750px) {
   #price {
-    height: 1250px;
-  }
-  #about {
-    height: 1000px;
+    height: 1300px;
   }
 }
 
