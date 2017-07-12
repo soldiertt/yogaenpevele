@@ -94,7 +94,7 @@ body > main, body > footer {
 }
 
 #price {
-  height: 700px;
+  height: 730px;
 }
 
 #price p {
@@ -117,21 +117,27 @@ body > main, body > footer {
 
 @media only screen and (max-width : 1750px) {
   #price {
-    height: 800px;
+    height: 850px;
   }
 }
 
 @media only screen and (max-width : 1600px) {
   #price {
-    height: 900px;
+    height: 950px;
   }
 }
 
 @media only screen and (max-width : 1400px) {
   #price {
-    height: 1000px;
+    height: 1050px;
   }
 
+}
+
+@media only screen and (max-width : 1300px) {
+  #price {
+    height: 1150px;
+  }
 }
 
 @media only screen and (max-width : 1200px) {
@@ -155,6 +161,12 @@ body > main, body > footer {
 @media only screen and (max-width : 750px) {
   #price {
     height: 1300px;
+  }
+}
+
+@media only screen and (max-width : 440px) {
+  #price {
+    height: 1400px;
   }
 }
 
