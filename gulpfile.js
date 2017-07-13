@@ -24,6 +24,12 @@ gulp.task('php', function() {
     .pipe(gulp.dest('dist'));
 });
 
+// FAVICON
+gulp.task('icon', function() {
+  return gulp.src('*.ico')
+    .pipe(gulp.dest('dist'));
+});
+
 // FONTS
 gulp.task('fonts', function() {
   return gulp.src('node_modules/materialize-css/dist/fonts/**/*')
@@ -80,5 +86,5 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-  gulp.run('vendorstyles', 'appstyles', 'vendorscripts', 'appscripts', 'images', 'html', 'fonts', 'php');
+  gulp.run('vendorstyles', 'appstyles', 'vendorscripts', 'appscripts', 'images', 'html', 'fonts', 'php', 'icon');
 });

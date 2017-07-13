@@ -53,6 +53,10 @@ ul.yep-list li {
   background-color: #F9FBEE;
 }
 
+.alert {
+  display: none;
+}
+
 /***********************
  ******** NAV **********
  ***********************/

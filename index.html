@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Yoga en Pévèle</title>
 
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -325,24 +327,33 @@
 
       <p>Un premier contact est indispensable pour vous inscrire à une séance d’essai. Places limitées.</p>
 
-      <form method="post" action="#">
+      <div class="card-panel teal lighten-3 alert" id="mail-success">
+        <span>Merci, nous avons bien envoyé votre message.</span>
+        <a href class="close-card"><i class="material-icons right">close</i></a>
+      </div>
+      <div class="card-panel orange lighten-3 red-text text-darken-3 alert" id="mail-failure">
+        <span>Une erreur est survenue lors de l'envoi du message.</span>
+        <a href class="close-card"><i class="material-icons right">close</i></a>
+      </div>
+
+      <form method="post" id="contactForm">
         <div class="row">
           <div class="input-field col m6 s12">
             <i class="material-icons prefix">account_circle</i>
             <label for="name">Nom</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
           <div class="input-field col m6 s12">
             <i class="material-icons prefix">email</i>
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" />
+            <input type="email" name="email" id="email" class="validate" required />
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">mode_edit</i>
             <label for="msg">Message</label>
-            <textarea name="msg" id="msg" class="materialize-textarea"></textarea>
+            <textarea name="msg" id="msg" class="materialize-textarea" required></textarea>
           </div>
         </div>
         <div class="row">
