@@ -166,6 +166,9 @@ body > main, body > footer {
   #price {
     height: 1300px;
   }
+  #where {
+    height: 800px;
+  }
 }
 
 @media only screen and (max-width : 440px) {
